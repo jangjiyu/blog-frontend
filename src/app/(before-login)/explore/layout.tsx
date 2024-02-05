@@ -5,5 +5,5 @@ interface Props {
 }
 
 export default async function ExploreLayout({ children }: Props) {
-  return <div>둘러보기 레이아웃 {children}</div>;
+  return <div>{children}</div>;
 }

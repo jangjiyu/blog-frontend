@@ -14,7 +14,6 @@ export default function SignupModal() {
   const router = useRouter();
   const onClickClose = () => {
     router.back();
-    // TODO: 뒤로가기가 /home이 아니면 /home으로 보내기
   };
 
   const onChangeId: ChangeEventHandler<HTMLInputElement> = (e) => {
@@ -46,7 +45,7 @@ export default function SignupModal() {
       .then((response: Response) => {
         console.log(response.status);
         if (response.status === 200) {
-          router.replace("/home");
+          router.replace("/");
         }
       })
       .catch((err) => {
